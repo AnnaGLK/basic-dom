@@ -1,0 +1,25 @@
+
+form{
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50vw;
+}
+.row{
+    width: 100%;
+
+}
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#errors p {
+  color: red;
+  margin: 0;
+}

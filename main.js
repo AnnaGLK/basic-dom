@@ -1,10 +1,6 @@
 const playingField = document.getElementById("playing-field");
 console.log(playingField);
 
-// const down = document.getElementById("down");
-// console.log(down);
-
-// console.log(down.innerHTML);
 
 document.getElementById("ball").style.backgroundColor = "yellow";
 
@@ -91,3 +87,22 @@ const leaveColor = function () {
 const clickColor = function () {
   box2.style.backgroundColor = "#8e44ad";
 };
+
+
+
+document.addEventListener("keydown", function (event) {
+  switch (event.key) {
+    case "ArrowRight":
+      moveRight();
+      break;
+    case "ArrowLeft":
+      moveLeft();
+      break;
+    case "ArrowUp":
+      moveTop();
+      break;
+    case "ArrowDown":
+      moveBottom();
+      break;
+  }
+});
